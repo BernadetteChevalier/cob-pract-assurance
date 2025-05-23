@@ -1,0 +1,58 @@
+      * Exercice brief gestion de fichier. Creation d'un programme 
+      
+      * 1- declaration et lecture du fichier.
+      * 2- Affichage enregistrement ligne 3 et 7
+      * 3- Crea fichier de sortie avec résumé
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. assur2. 
+       AUTHOR. BPC.
+       DATE-WRITTEN. 2025-05-16.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE CONTROL.
+           SELECT ASSURANCE-INPUT
+               ASSIGN TO "assurances.csv"
+                   ORGANIZATION IS LINE SEQUENTIAL.
+
+
+
+       DATA DIVISION.
+      * DESCRIPTION FICHIER QUI VA ETRE LU
+       FILE SECTION.
+      * 1 PRECISION SUR LA STRUCTURE DE CHAQUE LIGNE DU FICHIER
+       FD ASSURANCE-INPUT
+       
+       WORKING-STORAGE SECTION.
+      * TABLEAU EN MEMOIRE POUR STOCKER CHAQUE LIGNE
+
+      * INDEX POUR PARCOURIR LE TABLEAU
+
+      * LIMITE MAX D ENREGISTREMENT A LIRE
+
+      * INDICATEUR DE FIN DE TTT
+
+
+
+       PROCEDURE DIVISION. 
+      * OUVERTURE DU FICHIER
+
+      * LECTURE DE L ENSEMBLE DU FICHIER JUSQU A LA FIN
+
+      * INCREMENTER DE 1 DS INDEX A CHAQUE LIGNE
+
+      * FERMER LE FICHIER
+
+      * AFFICHER LE CONTENU DU FICHIER
+
+
+      * SELECTIONNER LES LIGNES 3 ET 7.
+
+      * AFFICHER LES LIGNES 3 ET 7 AVEC MISE EN PAGE
+
+      * CREER UN FICHIER DE SORTIE
+
+      * INSERER UN RESUME
+
+      * AFFICHER
